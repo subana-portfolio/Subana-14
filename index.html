@@ -1,51 +1,248 @@
+Subana-14/
+│
+├── index.html
+├── css/
+│   └── style.css
+└── js/
+    └── main.js
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Subana – Freelance Data Entry & Biology Writer</title>
-<style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-    .container { width: 80%; margin: auto; overflow: hidden; padding: 20px; background: #fff; margin-top: 30px; border-radius: 10px; }
-    h1, h2 { color: #2c3e50; }
-    ul { list-style: none; padding: 0; }
-    li { padding: 5px 0; }
-    .btn { display: inline-block; padding: 10px 20px; background: #3498db; color: #fff; text-decoration: none; border-radius: 5px; }
-    .btn:hover { background: #2980b9; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subana – Freelance Data Entry & Biology Writer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Subana – Freelance Data Entry, Virtual Assistant & Biology Writer from Sri Lanka. Fast, accurate, reliable.">
 </head>
 <body>
-<div class="container">
-    <h1>Subana – Freelance Data Entry & Biology Writer</h1>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#" class="logo">Subana</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="hero container" id="home">
+    <h1>Freelance Data Entry & Biology Writer</h1>
     <p>Fast, accurate, and reliable services for individuals and businesses worldwide.</p>
     <a href="[Your Fiverr Link]" class="btn">Contact Me on Fiverr</a>
-    
-    <h2>About Me</h2>
-    <p>Hi, I’m Subana, a B.Sc. (Honours) Zoology graduate from the University of Jaffna, Sri Lanka. 
-    I have professional experience as a Dispatcher, Digital Marketing Specialist, and Intern at Bank of Ceylon. 
-    I provide accurate and reliable data entry, virtual assistant services, and science writing.</p>
+  </section>
 
+  <section class="about container" id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Subana, a B.Sc. (Honours) Zoology graduate from the University of Jaffna, Sri Lanka. I have professional experience as a Dispatcher, Digital Marketing Specialist, and Intern at Bank of Ceylon. I provide accurate and reliable data entry, virtual assistant services, and science writing.</p>
+  </section>
+
+  <section class="services container" id="services">
     <h2>Services</h2>
     <ul>
-        <li>Data Entry & Data Processing (Excel / Google Sheets)</li>
-        <li>Virtual Assistant & Admin Support</li>
-        <li>Biology & Academic Writing</li>
-        <li>Web Research & PDF Conversion</li>
-        <li>Digital Marketing Assistance</li>
+      <li>Data Entry & Data Processing (Excel / Google Sheets)</li>
+      <li>Virtual Assistant & Admin Support</li>
+      <li>Biology & Academic Writing</li>
+      <li>Web Research & PDF Conversion</li>
+      <li>Digital Marketing Assistance</li>
     </ul>
+  </section>
 
+  <section class="why container" id="why">
     <h2>Why Choose Me</h2>
     <ul>
-        <li>✅ Fast and accurate work</li>
-        <li>✅ Detail-oriented and reliable</li>
-        <li>✅ Confidential and professional</li>
-        <li>✅ 100% satisfaction guaranteed</li>
+      <li>✅ Fast and accurate work</li>
+      <li>✅ Detail-oriented and reliable</li>
+      <li>✅ Confidential and professional</li>
+      <li>✅ 100% satisfaction guaranteed</li>
     </ul>
+  </section>
 
+  <section class="contact container" id="contact">
     <h2>Contact</h2>
     <p>Fiverr: <a href="[Your Fiverr Link]" target="_blank">Click Here</a><br>
     Email: [Your Email]<br>
     LinkedIn: [Optional]</p>
-</div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Subana | Built with ❤️ for freelance success</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
+:root {
+  --primary: #3498db;
+  --dark: #2c3e50;
+  --light: #f4f4f4;
+  --text: #333;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--light);
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* Navbar */
+.header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--dark);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+/* Section Styles */
+h2 {
+  color: var(--dark);
+  font-family: var(--font-heading);
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 6px 0;
+}
+
+/* Footer */
+.footer {
+  background: var(--dark);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+// Toggle mobile menu
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+// Smooth scroll for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+    navLinks.classList.remove("show"); // Close menu after clicking
+  });
+});
